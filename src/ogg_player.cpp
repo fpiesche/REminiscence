@@ -5,7 +5,7 @@
  */
 
 #ifdef USE_TREMOR
-#include <tremor/ivorbisfile.h>
+#include <ivorbisfile.h>
 #endif
 #ifdef USE_STB_VORBIS
 #include "stb_vorbis.c"
@@ -57,7 +57,6 @@ struct VorbisFile: File {
 		return vf->offset;
 	}
 };
-
 struct OggDecoder_impl {
 	OggDecoder_impl()
 		: _open(false), _readBuf(0), _readBufSize(0) {

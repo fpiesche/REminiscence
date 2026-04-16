@@ -14,6 +14,8 @@
 #include "scaler.h"
 #include "systemstub.h"
 #include "util.h"
+#include <version.h>
+
 
 static const char *USAGE =
 	"REminiscence - Flashback Interpreter\n"
@@ -209,6 +211,7 @@ static WidescreenMode parseWidescreen(const char *mode) {
 }
 
 int main(int argc, char *argv[]) {
+	printf("REminiscence version %s (%s %s)\n", FULL_VERSION, __DATE__, __TIME__);
 	const char *dataPath = "DATA";
 	const char *savePath = ".";
 	int levelNum = 0;
