@@ -86,4 +86,5 @@ In-game keys:
 ## Credits
 
 Delphine Software, obviously, for making another great game.
+
 Yaz0r, Pixel and gawd for sharing information they gathered on the game.
