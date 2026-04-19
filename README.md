@@ -17,21 +17,21 @@ You will need the original files of the DOS (floppy or CD), Amiga, Macintosh
 or PC98 release.
 
 For the Macintosh release, the resource fork must be dumped as a file named
-'FLASHBACK.BIN' (MacBinary) or 'FLASHBACK.RSRC' (AppleDouble).
+`FLASHBACK.BIN` (MacBinary) or `FLASHBACK.RSRC` (AppleDouble).
 
-For speech with in-game dialogues, you need to copy the 'VOICE.VCE' file
+For speech with in-game dialogues, you need to copy the `VOICE.VCE` file
 from the SegaCD version.
 
 The music/ directory of the Amiga version or the .mod fileset from
 [unexotica](https://www.exotica.org.uk/wiki/Flashback) can be used as an
 alternative to the MIDI tracks from the DOS version. Simply copy the files
-to the DATA directory and set the 'use_prf_music' option to false in the
+to the DATA directory and set the `use_prf_music` option to false in the
 configuration file.
 
 
 ## Running:
 
-By default, the engine loads the game data files from the 'DATA' directory,
+By default, the engine loads the game data files from the `DATA` directory,
 as the original game executable did. The savestates are saved in the current
 directory.
 
@@ -52,7 +52,7 @@ These paths can be changed using command line switches:
 
 The scaler option specifies the algorithm used to smoothen the image and the
 scaling factor. External scalers are also supported, the suffix shall be used
-as the name. Eg. If you have scaler_xbr.dll, you can pass '--scaler xbr@2'
+as the name. Eg. If you have scaler_xbr.dll, you can pass `--scaler xbr@2`
 to use that algorithm with a doubled window size (512x448).
 
 The widescreen option accepts the modes below:
