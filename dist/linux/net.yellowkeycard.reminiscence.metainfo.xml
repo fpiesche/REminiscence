@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>net.yellowkeycard.reminiscence</id>
+  <name>REminiscence</name>
+  <developer id="net.yellowkeycard.reminiscence">
+    <name>Grégory Montoir; REminiscence Contributors</name>
+    <url>https://git.yellowkeycard.net/outrider/REminiscence/activity/contributors</url>
+  </developer>
+  <summary>A modern cross-platform port of 1992's Flashback</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <url type="homepage">https://git.yellowkeycard.net/outrider/REminiscence</url>
+  <url type="vcs-browser">https://git.yellowkeycard.net/outrider/REminiscence</url>
+  <description>
+    <p>A reimplementation of the engine for Delphine Software's 1992 Amiga/DOS game Flashback,
+      designed as a cross-platform replacement for the original executable.</p>
+    <p>The game data files (DOS, PC-CD, Amiga, Macintosh) are required.</p>
+    <p>REminiscence also supports the Amiga protracker music and SegaCD speech files, as well as
+      the English, French, German, Spanish, Italian and Japanese versions of the game.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://cdn.jsdelivr.net/gh/fpiesche/f2bgl/main/meta/screenshot_cell.png</image>
+      <caption>The start of the game: Breaking out of your cell</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Game</category>
+    <category>ActionGame</category>
+  </categories>
+  <supports>
+    <control>keyboard</control>
+  </supports>
+  <recommends>
+    <control>gamepad</control>
+  </recommends>
+  <requires>
+    <internet>offline-only</internet>
+  </requires>
+  <provides>
+    <binary>reminiscence</binary>
+  </provides>
+  <keywords>
+    <keyword>retro</keyword>
+    <keyword>flashback</keyword>
+    <keyword>delphine</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="0.5.5" date="2025-04-03">
+      <description>
+        <ul>
+          <li>added 'DEMO' inputs with Macintosh version</li>
+          <li>fixed some cutscene graphical glitches</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.4" date="2025-01-11">
+      <description>
+        <ul>
+          <li>added options menu with Macintosh version</li>
+          <li>fixed cutscenes crashes with Macintosh data files</li>
+          <li>fixed story text colors with Macintosh CD version</li>
+          <li>rewrote Macintosh graphics decoding functions</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.3" date="2024-12-21">
+      <description>
+        <ul>
+          <li>added initial support for Sega data files</li>
+          <li>added widescreen mode for Amiga and PC98</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.2" date="2023-11-03">
+      <description>
+        <ul>
+          <li>added initial support for PC98 data files</li>
+          <li>added configuration to fix Adlib 0xE0 writes</li>
+          <li>fixed cutscene seeks with Macintosh data files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.1" date="2023-04-14">
+      <description>
+        <ul>
+          <li>added looping for DOS .prf music</li>
+          <li>changed audio mixer to stereo</li>
+          <li>updated timings for cutscenes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2023-03-31">
+      <description>
+        <ul>
+          <li>added CD-i widescreen mode (flashp*bob)</li>
+          <li>added support for DOS .prf music (Adlib, MT32)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.9" date="2021-09-05">
+      <description>
+        <ul>
+          <li>added option to match original inventory items order</li>
+          <li>added zoom from DOS version</li>
+          <li>added Sega CD tracks playback based on stb_vorbis (OGG 22khz)</li>
+          <li>fixed piege opcode 0x57</li>
+          <li>fixed volume of repeating sounds</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.8" date="2021-05-27">
+      <description>
+        <ul>
+          <li>added detection for DOS version with .ABA files</li>
+          <li>added Macintosh credits</li>
+          <li>fixed ESPIONS cutscene timing with Amiga music</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.7" date="2021-05-01">
+      <description>
+        <ul>
+          <li>added detection for Macintosh CD version</li>
+          <li>restored some content from MEMO cutscene</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.6" date="2019-12-28">
+      <description>
+        <ul>
+          <li>added rewind to automatic saves</li>
+          <li>fixed passwords and protection codes input</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.5" date="2019-10-27">
+      <description>
+        <ul>
+          <li>added low-pass filtering for in-game music</li>
+          <li>added support for 3DO background music (tunes/*.Cpc)</li>
+          <li>added protection screen for DOS SSI version</li>
+          <li>fixed ASC and CARTE cutscenes enablement</li>
+          <li>fixed loudness of sound effects and in-game music</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.4" date="2019-10-27">
+      <description>
+        <ul>
+          <li>added auto-save</li>
+          <li>fixed graphical glitches with Macintosh data files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.3" date="2018-03-28">
+      <description>
+        <ul>
+          <li>added title and logo screens for Macintosh</li>
+          <li>fixed cutscene offsets with Macintosh data files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.2" date="2018-03-18">
+      <description>
+        <ul>
+          <li>added graphic borders (16:9 displays)</li>
+          <li>added detection for Macintosh AppleDouble</li>
+          <li>added language selection in title screen</li>
+          <li>added story texts for Macintosh</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.1" date="2018-02-24">
+      <description>
+        <ul>
+          <li>added support for Macintosh sounds playback</li>
+          <li>improved graphics scalers performance</li>
+          <li>fixed palette glitches with .BNQ DOS data files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.0" date="2018-02-10">
+      <description>
+        <ul>
+          <li>added initial support for Macintosh data files (512x448 resolution)</li>
+          <li>added configuration file entries for disabled cutscenes</li>
+          <li>fixed screen shaking offset (level 2)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.7" date="2018-01-20">
+      <description>
+        <ul>
+          <li>added 'caillou-f.set' cutscene</li>
+          <li>added detection for 'fbdemofr.zip' DOS demo data files</li>
+          <li>fixed cutscene text offsets with Japanese language</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.6" date="2018-01-14">
+      <description>
+        <ul>
+          <li>added cutscene music looping</li>
+          <li>added 'DEMO' to title menu</li>
+          <li>fixed potential crash with the 'walk through walls' glitch</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.5" date="2017-12-06">
+      <description>
+        <ul>
+          <li>added Japanese in-game texts</li>
+          <li>added support for localized .TBN (PC-CD)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.4" date="2017-11-03">
+      <description>
+        <ul>
+          <li>added screenshot for SDL2</li>
+          <li>added support for external graphics scalers (xbrz, scale2x)</li>
+          <li>fixed keypress detection for fullscreen/windowed</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.3" date="2017-07-07">
+      <description>
+        <ul>
+          <li>added configuration for disabling .SEQ playback</li>
+          <li>fixed some Amiga palette glitches</li>
+          <li>fixed protection screen for Amiga</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.2" date="2016-08-07">
+      <description>
+        <ul>
+          <li>added support for DOS demo*.bin files</li>
+          <li>added detection for DOS SSI version</li>
+          <li>added compilation with SDL2</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2016-05-09">
+      <description>
+        <ul>
+          <li>added workarounds for cutscene glitches present in the game (espions, voyage)</li>
+          <li>fixed DOS credits sequence</li>
+          <li>fixed Amiga cutscene captions display</li>
+          <li>fixed Amiga 24px sprites</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.0" date="2016-03-20">
+      <description>
+        <ul>
+          <li>added configuration file</li>
+          <li>added optional playback for disabled cutscenes (asc, metro, serrure)</li>
+          <li>added support for DOS demo data file (DEMO_UK.ABA)</li>
+          <li>set frame rate to 30Hz</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.2" date="2015-08-02">
+      <description>
+        <ul>
+          <li>added support for level background music</li>
+          <li>added Italian texts</li>
+          <li>fixed PC-CD SEQ cutscenes numbering</li>
+          <li>fixed several issues with Amiga data files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.1" date="2011-03-15">
+      <description>
+        <ul>
+          <li>added music playback to PC-CD SEQ cutscenes</li>
+          <li>fixed some palette and sprite issues with Amiga data</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2011-03-11">
+      <description>
+        <ul>
+          <li>added support for PC-CD SEQ cutscenes</li>
+          <li>added support for Amiga data files (experimental)</li>
+          <li>fixed minor sound glitches</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.9" date="2007-03-16">
+      <description>
+        <ul>
+          <li>fixed minor glitches in cutscenes</li>
+          <li>fixed several Conrad moves</li>
+          <li>fixed fast mode</li>
+          <li>made game version autodetection defaulting to English</li>
+          <li>added support for SegaCD speech files</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.8" date="2005-08-31">
+      <description>
+        <ul>
+          <li>fixed crash in MOD player</li>
+          <li>fixed minor glitch with in-game save switches</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.7" date="2005-08-24">
+      <description>
+        <ul>
+          <li>improved in-game menu</li>
+          <li>added autodetection for language of the game</li>
+          <li>added support for Amiga music files</li>
+          <li>added support for the protection screen (disabled by default)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.6" date="2005-06-05">
+      <description>
+        <ul>
+          <li>added in-game menu</li>
+          <li>fixed remaining graphical glitches</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.5" date="2005-04-05">
+      <description>
+        <ul>
+          <li>added spanish and german versions support</li>
+          <li>added input keys recording</li>
+          <li>reduced memory usage</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.4" date="2005-04-02">
+      <description>
+        <ul>
+          <li>added screen shaking (level 2)</li>
+          <li>added support for Amiga music (experimental)</li>
+          <li>fixed screen refresh after teleportation</li>
+          <li>fixed bug in savestate restore</li>
+          <li>added dirty blocks rendering</li>
+          <li>added save/load states</li>
+          <li>fixed issues with level 2 cutscenes (subway maps, mission screens)</li>
+          <li>fixed glitch in continue/abort screen</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.3" date="2005-02-15">
+      <description>
+        <ul>
+          <li>added sound effects playback</li>
+          <li>added support for polygonal cutscenes</li>
+          <li>added support for final credits sequence</li>
+          <li>fixed instructions screen display in English version</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.2" date="2005-02-07">
+      <description>
+        <ul>
+          <li>added sound effects playback</li>
+          <li>added support for polygonal cutscenes</li>
+          <li>added support for final credits sequence</li>
+          <li>fixed instructions screen display in English version</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.1" date="2005-01-29">
+      <description>
+        <ul>
+          <li>added missing opcodes, game should now be completable</li>
+          <li>added scale2x and scale3x filters</li>
+          <li>enabled level switching</li>
+          <li>fixed several engine bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2005-01-23">
+      <description><p>First public release.</p></description>
+    </release>
+  </releases>
+</component>

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=REminiscence
+Comment=A modern port of Flashback
+Icon=net.yellowkeycard.reminiscence
+Exec=reminiscence
+Categories=Game;ActionGame
