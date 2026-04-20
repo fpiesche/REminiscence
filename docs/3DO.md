@@ -105,7 +105,7 @@ has been written. Although there is an existing playSound opcode, the
 change has been done directly in the engine code when performing a game
 state save.
 
-```
+```asm
 .text:0000A034    ADR    R1, aGamesave_aif ; "GAMESAVE.AIF"
 .text:0000A038    MOV    R0, #66
 .text:0000A03C    BL     load_aif
@@ -136,7 +136,7 @@ The Conrad animation played in the main menu comes with two encodings, one `Unco
 
 `Conrad.coded8` is loaded if `Conrad.smlanim.Uncoded16` fails.
 
-```
+```asm
 .text:00009C4C     ADR     R0, aBootGlobalConr ; "$boot/Global/Conrad.smlanim.Uncoded16"
 .text:00009C50     MOV     R1, #0x40000
 .text:00009C54     BL      load_cel_anim
@@ -166,7 +166,7 @@ three checks if a demo file (`Demo/DEMOx.TEST`) is loaded:
   - sounds are not played
   - background level music is played
 
-```
+```asm
 .text:00008B28     LDR     R0, =_demoNumTestPtr
 .text:00008B2C     LDR     R0, [R0]
 .text:00008B30     TEQ     R0, #0
