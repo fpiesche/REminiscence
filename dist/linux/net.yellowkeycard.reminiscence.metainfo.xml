@@ -19,10 +19,10 @@
       the English, French, German, Spanish, Italian and Japanese versions of the game.</p>
   </description>
   <screenshots>
-    <screenshot type="default">
-      <image type="source">https://cdn.jsdelivr.net/gh/fpiesche/f2bgl/main/meta/screenshot_cell.png</image>
-      <caption>The start of the game: Breaking out of your cell</caption>
-    </screenshot>
+    <!-- <screenshot type="default">
+      <image type="source">https://cdn.jsdelivr.net/gh/fpiesche/REminiscence@main/dist/screenshots/01_title.png</image>
+      <caption>Title screen</caption>
+    </screenshot> -->
   </screenshots>
   <categories>
     <category>Game</category>
